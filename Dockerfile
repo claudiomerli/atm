@@ -1,8 +1,8 @@
 # syntax=docker/dockerfile:1.4
 FROM eclipse-temurin:21-jre-jammy AS builder
 
-ARG MODPACK_ZIP=ServerFiles-6.4.zip
-ARG MODPACK_URL=https://mediafilez.forgecdn.net/files/7878/549/ServerFiles-6.4.zip
+ARG MODPACK_ZIP=ServerFiles-6.6.zip
+ARG MODPACK_URL=https://mediafilez.forgecdn.net/files/7892/979/ServerFiles-6.6.zip
 
 WORKDIR /server
 

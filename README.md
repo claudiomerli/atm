@@ -7,7 +7,7 @@ This project builds a Docker image containing the **All the Mods 10** server fil
 The `Dockerfile`:
 
 - uses a two-stage build based on `eclipse-temurin:21-jre-jammy`
-- downloads `ServerFiles-6.1.zip` during the builder stage
+- downloads `ServerFiles-6.6.zip` during the builder stage
 - extracts the modpack files into `/server`
 - makes `startserver.sh` executable
 - exposes port `25565`
@@ -30,8 +30,8 @@ You can also override the downloaded archive name and URL at build time:
 ```bash
 docker build \
   -t claudiomerli/atm:latest \
-  --build-arg MODPACK_ZIP=ServerFiles-6.1.zip \
-  --build-arg MODPACK_URL=https://mediafilez.forgecdn.net/files/7722/634/ServerFiles-6.1.zip \
+  --build-arg MODPACK_ZIP=ServerFiles-6.6.zip \
+  --build-arg MODPACK_URL=https://mediafilez.forgecdn.net/files/7892/979/ServerFiles-6.6.zip \
   .
 ```
 
